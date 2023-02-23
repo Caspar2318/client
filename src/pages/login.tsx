@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import { useLogin } from "@pankod/refine-core";
 import { Container, Box } from "@pankod/refine-mui";
 
+import { xboard } from "../assets";
+
 import { CredentialResponse } from "../interfaces/google";
 
 export const Login: React.FC = () => {
@@ -18,7 +20,7 @@ export const Login: React.FC = () => {
       try {
         window.google.accounts.id.initialize({
           ux_mode: "popup",
-          client_id: "your-client-id",
+          client_id: process.env.REACT_APP_GOOGLE_CLIENT_ID,
           callback: async (res: CredentialResponse) => {
             if (res.credential) {
               login(res);
@@ -42,7 +44,7 @@ export const Login: React.FC = () => {
     <Box
       component="div"
       sx={{
-        background: `radial-gradient(50% 50% at 50% 50%, #63386A 0%, #310438 100%)`,
+        background: `radial-gradient(50% 50% at 50% 50%, #cfddf1 0%, #c6e2ff 100%)`,
         backgroundSize: "cover",
       }}
     >
@@ -65,9 +67,13 @@ export const Login: React.FC = () => {
           }}
         >
           <div>
-            <img src="./refine.svg" alt="Refine Logo" />
+            <img
+              src={xboard}
+              alt="Xboard logo"
+              style={{ width: "300px", height: "300px" }}
+            />
           </div>
-          <Box mt={4}>
+          <Box>
             <GoogleButton />
           </Box>
         </Box>
