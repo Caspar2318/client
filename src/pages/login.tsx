@@ -44,7 +44,7 @@ export const Login: React.FC = () => {
     <Box
       component="div"
       sx={{
-        background: `radial-gradient(50% 50% at 50% 50%, #cfddf1 0%, #c6e2ff 100%)`,
+        background: `radial-gradient(50% 50% at 50% 50%, #fff 0%, #c6e2ff 100%)`,
         backgroundSize: "cover",
       }}
     >
@@ -70,7 +70,7 @@ export const Login: React.FC = () => {
             <img
               src={xboard}
               alt="Xboard logo"
-              style={{ width: "300px", height: "300px" }}
+              style={{ width: "90%", height: "90%" }}
             />
           </div>
           <Box>
