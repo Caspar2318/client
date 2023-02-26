@@ -30,7 +30,7 @@ import {
   Home,
   Agents,
   MyProfile,
-  ProperrtyDetails,
+  PropertyDetails,
   AllProperties,
   CreateProperty,
   AgentProfile,
@@ -135,7 +135,7 @@ function App() {
             {
               name: "properties",
               list: AllProperties,
-              show: ProperrtyDetails,
+              show: PropertyDetails,
               create: CreateProperty,
               edit: EditProperty,
               icon: <VillaOutlined />,

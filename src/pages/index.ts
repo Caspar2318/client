@@ -6,7 +6,7 @@ import EditProperty from "./edit-property";
 import Home from "./home";
 import { Login } from "./login";
 import MyProfile from "./my-profile";
-import ProperrtyDetails from "./property-details";
+import PropertyDetails from "./property-details";
 
 export {
   AgentProfile,
@@ -17,5 +17,5 @@ export {
   Home,
   Login,
   MyProfile,
-  ProperrtyDetails,
+  PropertyDetails,
 };
