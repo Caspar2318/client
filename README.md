@@ -1,6 +1,8 @@
 # Crazy practice on CRUD with FULL Stack developement and TypeScript applied.
 
-# Website has been deployed at:
+# Website has been deployed at: https://xboard.cxcspace.com/
+
+https://vimeo.com/802646511/63a9d698e0
 
 Transform a figma design into a fully functional website
 
