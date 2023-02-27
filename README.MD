@@ -1,53 +1,36 @@
-# client
+# Crazy practice on CRUD with FULL Stack developement and TypeScript applied.
 
-<div align="center" style="margin: 30px;">
-    <a href="https://refine.dev">
-    <img src="https://refine.ams3.cdn.digitaloceanspaces.com/refine_logo.png"  align="center" />
-    </a>
-</div>
-<br/>
+# Website has been deployed at:
 
-This [refine](https://github.com/pankod/refine) project was generated with [superplate](https://github.com/pankod/refine).
+Transform a figma design into a fully functional website
 
-## Getting Started
+following have been used along the way as:
 
-**refine** is a React-based framework for building data-intensive applications in no time ✨
+NodeJS / Express / MongoDB / ReactJS / TypeScript / Material UI
 
-Refine offers lots of out-of-the box functionality for rapid development, without compromising extreme customizability. Use-cases include, but are not limited to admin panels, B2B applications and dashboards.
+cloudinary / Google Auth / refine
 
-## Available Scripts
+Practices make the best, we are not born to coding but we can build coding muscle to!!!
 
-### Running the development server.
+#npm create refine-app@latest client
+option to choose as:
 
-```bash
-    npm run dev
-```
+refine(CRA) => client => REST API => Material UI => Yes (example pages)
 
-### Building for production.
+=> Yes (customize material ui theme) => Yes (customize material ui
 
-```bash
-    npm run build
-```
+layout) => Yes (add dark mode support) => Google (authentication logic
 
-### Running the production server.
+choice) => No (i18n support) => No (kbar command interface support)
 
-```bash
-    npm run start
-```
+cd client
 
-## Learn More
+#npm install apexcharts react-apexcharts
 
-To learn more about **refine**, please check out the [Documentation](https://refine.dev/docs)
+if met problem as 'An error saving your app occurs' while doing Google API & Services OAuth consent screen. Enter your project id as 'App Name' instead of name it yourself.
 
-- **REST Data Provider** [Docs](https://refine.dev/docs/core/providers/data-provider/#overview)
-- **Material UI** [Docs](https://refine.dev/docs/ui-frameworks/mui/tutorial/)
-- **Inferencer** [Docs](https://refine.dev/docs/packages/documentation/inferencer)
-- **Material UI Light/Dark Mode** [Docs](https://refine.dev/docs/ui-frameworks/mui/customization/mui-custom-theme/)
-- **Material UI Custom Theme** [Docs](https://refine.dev/docs/ui-frameworks/mui/customization/mui-custom-theme/)
-- **Custom Layout** [Docs](https://refine.dev/docs/ui-frameworks/mui/customization/mui-custom-layout/)
-- **React Router** [Docs](https://refine.dev/docs/core/providers/router-provider/)
-- **Google Auth Provider** [Docs](https://refine.dev/docs/core/providers/auth-provider/)
+cd server => npm init -y => add "type":"module" inside package.json file under the "description"
 
-## License
+#npm install cloudinary cors dotenv express mongoose nodemon
 
-MIT
+change the script inside server package.json file as "start": "nodemon index"
