@@ -58,15 +58,18 @@ function App() {
 
       // save user data to mongodb
       if (profileObj) {
-        const response = await fetch("http://localhost:8080/users", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: profileObj.name,
-            email: profileObj.email,
-            avatar: profileObj.picture,
-          }),
-        });
+        const response = await fetch(
+          "https://refine-dashboard-e76a.onrender.com/users",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: profileObj.name,
+              email: profileObj.email,
+              avatar: profileObj.picture,
+            }),
+          }
+        );
 
         const data = await response.json();
 
@@ -127,7 +130,9 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("http://localhost:8080")}
+          dataProvider={dataProvider(
+            "https://refine-dashboard-e76a.onrender.com"
+          )}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
